@@ -1,0 +1,22 @@
+{
+  "name": "@dreamworld/hammerjs",
+  "version": "0.0.0-development",
+  "description": "This is a wraper module of hammerjs (https://www.npmjs.com/package/hammerjs) which just export globle varialbe",
+  "main": "hammer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DreamworldSolutions/hammerjs.git"
+  },
+  "author": "Shakil Mansuri",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-release": "17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
