@@ -5,7 +5,7 @@
 ## Use cases
 
 ```javascript
-import Hammer from  "@dreamworld/hammerjs";
+import Hammer from  "@dreamworld/hammerjs/hammer.js";
 
 var hammerInstance = new Hammer(element);
 hammerInstance.get('pinch').set({ enable: true});
