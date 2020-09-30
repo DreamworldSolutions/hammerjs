@@ -1908,8 +1908,12 @@ const init = function () {
             this.tryEmit();
           }, options.time, this);
         } else if (input.eventType & INPUT_END) {
+          this.reset();
+          console.log("end called...");
           return STATE_RECOGNIZED;
         }
+
+        console.log("failed called...");
         return STATE_FAILED;
       },
 
@@ -1923,9 +1927,11 @@ const init = function () {
         }
 
         if (input && (input.eventType & INPUT_END)) {
+          console.log("press up called...");
           this.manager.emit(this.options.event + 'up', input);
         } else {
           this._input.timeStamp = now();
+          console.log("press called...");
           this.manager.emit(this.options.event, this._input);
         }
       }
