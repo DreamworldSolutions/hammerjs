@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "semantic-release": "17.0.8"
+    "semantic-release": "17.2.3"
   },
   "publishConfig": {
     "access": "public"
