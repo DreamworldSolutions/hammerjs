@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   merge-to-development:
     machine: true
@@ -39,7 +39,7 @@ jobs:
             
   release-snapshot:
     docker:
-      - image: circleci/node:14
+      - image: cimg/node:lts
     steps:
       - checkout
       - run: yarn install --production=true --flat --non-ineractive
@@ -52,7 +52,7 @@ jobs:
             npx semantic-release
   release:
     docker:
-      - image: circleci/node:14
+      - image: cimg/node:lts
     steps:
       - checkout
       - run: yarn install --production=true --flat --non-ineractive
@@ -64,7 +64,6 @@ jobs:
 
 
 workflows:
-  version: 2
   merge-to-development:
     jobs:
       - merge-to-development:
